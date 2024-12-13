@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Signin</title>
+    <meta name="description" content="ProGaming" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pro Gaming</title>
+    <link rel="icon" href="img/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            /*Display width and height*/
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            font-family: "Lato", sans-serif;
+            font-weight: 700;
+            /* To make all the elements center */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /*Font color and background Color*/
+            color: #555;
+            background: #202020;
+        }
+
+        .loginPage-div {
+            /* Login Card Width and height */
+            width: 430px;
+            height: 500px;
+            /* padding */
+            padding: 20px 35px 15px 35px;
+            border-radius: 35px;
+            background: #ecf0f3;
+            /* Box-shadow for 3d visualization*/
+            box-shadow: -6px -6px 6px rgba(255, 255, 255, 0.8),
+                6px 6px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .loginPage-logo {
+            background: url("img/logo.jpg");
+            background-size: cover;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto;
+            /* Box-shadow for logo */
+            box-shadow: 0px 0px 2px #5f5f5f, 0px 0px 0px 5px #ecf0f3,
+                8px 8px 15px #a7aaaf, -8px -8px 15px #ffffff;
+        }
+
+        .loginPage-title {
+            text-align: center;
+            font-size: 28px;
+            padding-top: 24px;
+            letter-spacing: 0.5px;
+            color: #5ed887;
+        }
+
+        .loginPage-sub-title {
+            text-align: center;
+            font-size: 15px;
+            padding-top: 7px;
+            letter-spacing: 3px;
+            color: #5eaa77;
+        }
+
+        .loginPage-input-fields {
+            width: 100%;
+            padding: 20px 5px 10px 5px;
+        }
+
+        .loginPage-input-fields input {
+            /* To hide default browser options of input field */
+            border: none;
+            outline: none;
+            /* Custom design for the input field */
+            background: none;
+            font-size: 18px;
+            color: #555;
+            padding: 15px 10px 15px 5px;
+        }
+
+        .loginPage-email,
+        .loginPage-password {
+            margin-bottom: 20px;
+            border-radius: 20px;
+            /* Box-shadow for 3d */
+            box-shadow: inset 5px 5px 5px #cbced1,
+                inset -5px -5px 5px #ffffff;
+        }
+
+        .loginPage-input-fields svg {
+            height: 22px;
+            margin: 0 10px -3px 25px;
+        }
+
+        .loginPage-button {
+            /* To hide default browser options of input field */
+            outline: none;
+            border: none;
+            /* Custom design for the Button */
+            cursor: pointer;
+            width: 100%;
+            height: 60px;
+            border-radius: 25px;
+            font-size: 20px;
+            font-weight: 700;
+            font-family: "Lato", sans-serif;
+            color: #fff;
+            text-align: center;
+            background: #67d18a;
+            box-shadow: 7px 7px 8px #cbced1, -7px -7px 8px #ffffff;
+            transition: 0.5s;
+            text-decoration: none;
+        }
+
+        .loginPage-button:hover {
+            background: #5fb87d;
+        }
+
+        .loginPage-button:active {
+            background: #4a9764;
+        }
+
+        .loginPage-link {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .loginPage-link a {
+            text-decoration: none;
+            color: #aaa;
+            font-size: 15px;
+            transition: 0.5s;
+        }
+
+        .loginPage-link a:hover {
+            text-decoration: none;
+            color: #67d18a;
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loginPage-div">
+        <div class="loginPage-logo"></div>
+        <div class="loginPage-title">Pro Gaming</div>
+        <div class="loginPage-sub-title">Login Form</div>
+        <div class="loginPage-input-fields">
+            <div class="loginPage-email">
+                <svg viewBox="0 0 1024 1024"></svg>
+                <input type="email" placeholder="email" required/>
+            </div>
+
+            <div class="loginPage-password">
+                <svg viewBox="0 0 1024 1024"></svg>
+                <input type="password" placeholder="password" required />
+            </div>
+        </div>
+
+        <button class="loginPage-button"><a href="index.html" class="loginPage-button">Signin</a></button>
+        <div class="loginPage-link">
+            <a href="#"> Forgot password?</a> or <a href="#">Signup</a>
+        </div>
+    </div>
+</body>
+  
+</html>
