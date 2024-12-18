@@ -5,6 +5,8 @@ html {
 /* Importing Google font - Poppins */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+
+
 * {
 margin: 0;
 padding: 0;
@@ -12,16 +14,45 @@ box-sizing: border-box;
 font-family: "Poppins", sans-serif;
 }
 
+
+
 body {
-min-height: 100vh;
-background: #F0F4FF;
+  background-color: #000000;
+  color: whitesmoke;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 100%;
+  background-size: cover;
+  text-align: center;
+  padding-left: 100px;
 }
 
+video{
+  width: 80%;
+  object-fit: cover;
+  
+}
+  
+.DownloadButton img{
+border-radius: 50%;
+width: 40%;
+height: auto;
+position: fixed;
+top: 50%;
+left: 50%;
+margin-top: -100px;
+margin-left: -155px;
+max-width: 300px;
+}
+
+
+
+/* sidebar */
 .sidebar {
 position: fixed;
 top: 0;
 left: 0;
-height: 18rem;
+height: 21rem;
 width: 85px;
 display: flex;
 overflow-x: hidden;
@@ -47,7 +78,7 @@ border-radius: 50%;
 }
 
 .sidebar .sidebar-header h2 {
-color: #030303;
+color: #31446e;
 font-size: 1.25rem;
 font-weight: 600;
 white-space: nowrap;
@@ -120,14 +151,16 @@ border-radius: 4px;
 
 .user-account {
 margin-top: auto;
-padding: 12px 10px;
+padding-left :10px;
+margin-top: 10px;
 margin-left: -10px;
 }
 
 .user-profile {
+background: #161a2d;
 display: flex;
 align-items: center;
-color: #161a2d;
+color: #ffffff;
 }
 
 .user-profile img {
@@ -156,48 +189,15 @@ background: #fff;
 border-radius: 4px;
 }
 
-body {
-  background-color: #000000;
-  color: whitesmoke;
-  background-repeat: no-repeat;
-  height: 100%;
-  background-size: cover;
-  text-align: center;
-  padding-left: 100px;
-}
-
-.rahman{
-position: fixed;
-text-align: center;
-padding-left: 30%;
-
-}
-
-video{
-width: 80%;
-object-fit: cover;
-
-}
-
-.boy img{
-  padding-top: 2rem;
-}
+/*      ..........  */
 
 
-.aaa img{
-border-radius: 50%;
-width: 40%;
-height: auto;
-position: fixed;
-top: 50%;
-left: 50%;
-margin-top: -100px;
-margin-left: -155px;
-max-width: 300px;
-}
 
 
-/* || CONTACT */
+
+
+
+/* || CONTACT PAGE*/
 
 .contact__h2 {
   margin: 0;
@@ -219,7 +219,6 @@ max-width: 300px;
 .contact__input,
 .contact__textarea {
   padding: 0.5em;
-  border-radius: var(--BORDER-RADIUS);
   border-width: 2px;
   width: 100%;
 }
@@ -227,7 +226,5 @@ max-width: 300px;
 .contact__button {
   padding: 0.5em;
   border-radius: 1.5rem;
-  background-color: var(--HIGHLIGHT-COLOR);
-  color: var(--BUTTON-COLOR);
   font-weight: bold;
 }
